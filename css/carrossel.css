@@ -1,0 +1,76 @@
+section div.carrossel{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+    section div.carrossel div.carrossel-content{
+        width: 400%;
+        height: auto;
+        display: flex;
+    }
+
+    section div.carrossel div.carrossel-content input, 
+    section div.carrossel div.carrossel-box img.mobile{
+        display: none;
+    }
+
+    section div.carrossel div.carrossel-content input#radio1:checked ~ section div.carrossel div.nav-auto div.auto-btn1,
+    section div.carrossel div.carrossel-content input#radio2:checked ~ section div.carrossel div.nav-auto div.auto-btn2,
+    section div.carrossel div.carrossel-content input#radio3:checked ~ section div.carrossel div.nav-auto div.auto-btn3,
+    section div.carrossel div.carrossel-content input#radio4:checked ~ section div.carrossel div.nav-auto div.auto-btn4{
+        background-color: #000;
+    }
+
+    section div.carrossel div.carrossel-content input#radio1:checked ~ section div.carrossel div.primeiro{
+        margin-left: 0%;
+    }
+
+    section div.carrossel div.carrossel-content input#radio2:checked ~ section div.carrossel div.primeiro{
+        margin-left: -25%;
+    }
+
+    section div.carrossel div.carrossel-content input#radio2:checked ~ section div.carrossel div.primeiro{
+        margin-left: -50%;
+    }
+
+    section div.carrossel div.carrossel-content input#radio2:checked ~ section div.carrossel div.primeiro{
+        margin-left: -75%;
+    }
+
+    section div.carrossel div.carrossel-box{
+        width: 25%;
+        height: auto;
+        position: relative;
+        text-align: center;
+        transition: 1s;
+    }
+    section div.carrossel div.carrossel-box img{
+        width: 100%;
+    }
+
+    section div.carrossel div.nav-manual, 
+    section div.carrossel div.nav-auto{
+        position: absolute;
+        width: 100%;
+        margin-top: 35%;
+    }
+
+    section div.carrossel div.nav-manual label.manual-btn,
+    section div.carrossel div.nav-auto div{
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.2;
+    }
+
+    section div.carrossel div.nav-manual label.manual-btn:not(:last-child){
+        margin-right: 10px;
+    }
+
+    section div.carrossel div.nav-manual label.manual-btn:hover{
+        background-color: #000;
+    }

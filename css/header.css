@@ -1,0 +1,38 @@
+:root{
+    --cor-header: #000;
+    --cor-texto-header: #fff;
+}
+
+header{
+    background-color: var(--cor-header);
+    color: var(--cor-texto-header);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    font-size: 1.3em;
+    position: fixed;
+}
+
+header div.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+header div.container img#logoInnove{
+    width: 6%;
+    padding-left: 5%;
+}
+
+header div.container  nav {
+    width: 80%;
+    margin: auto 0;
+}
+
+header div.container nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header div.container nav ul li{
+    padding-right:3%;
+}
