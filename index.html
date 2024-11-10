@@ -6,7 +6,9 @@
     <title>InnoveDev</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link type="text/javascript" href="./js/carrossel.js" defer>
+    <link rel="stylesheet" href="./css/carrossel.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/carrossel.js" defer></script>
 </head>
 <body>
 
@@ -26,44 +28,46 @@
     </header>
 
     <main>
-        <section>
-            <div class="carrossel">
-                <div class="carrossel-content">
-                    <input type="radio" name="btn-radio" id="radio1">
-                    <input type="radio" name="btn-radio" id="radio2">
-                    <input type="radio" name="btn-radio" id="radio3">
-                    <input type="radio" name="btn-radio" id="radio4">
-                    <div class="carrossel-box primeiro">
-                        <img class="desktop" src="img/com resultado.png" alt="">
-                        <img class="mobile" src="img/slide-1-moblie" alt="">
-                    </div>
-                    <div class="carrossel-box">
-                        <img class="desktop" src="img/histórico.png" alt="">
-                        <img class="mobile" src="img/slide-2-moblie" alt="">
-                    </div>
-                    <div class="carrossel-box">
-                        <img class="desktop" src="img/Parametros com a visão com erro.png" alt="">
-                        <img class="mobile" src="img/slide-3-moblie" alt="">
-                    </div>
-                    <div class="carrossel-box">
-                        <img class="desktop" src="img/TRATATIVAS CONTRATOS REGISTRADOS (1).png" alt="">
-                        <img class="mobile" src="img/slide-2-moblie" alt="">
-                    </div>
-                </div>
-                
-                <div class="nav-">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
+        <section class="carrossel">
+            <div class="carrossel-content">
 
-                <div class="nav-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
+                <!--Radio Buttons-->
+                <input type="radio" name="carrossel-content-btnRadio" id="radio1">
+                <input type="radio" name="carrossel-content-btnRadio" id="radio2">
+                <input type="radio" name="carrossel-content-btnRadio" id="radio3">
+                <input type="radio" name="carrossel-content-btnRadio" id="radio4">
+                <!--Fim Radio Buttons-->
+
+                <!--Imagens do Carrossel-->
+                <div class="carrossel-content-box primeiro">
+                    <img class="desktop" src="img/com resultado.png" alt="">
                 </div>
+                <div class="carrossel-content-box">
+                    <img class="desktop" src="img/histórico.png" alt="">
+                </div>
+                <div class="carrossel-content-box">
+                    <img class="desktop" src="img/Parametros com a visão com erro.png" alt="">
+                </div>
+                <div class="carrossel-content-box">
+                    <img class="desktop" src="img/TRATATIVAS CONTRATOS REGISTRADOS (1).png" alt="">
+                </div>
+                 <!--Fim Imagens do Carrossel-->
+
+                 <!--Navegação Automática-->
+                 <div class="carrossel-content-navAuto">
+                    <div class="carrossel-content-navAuto-autoBtn1"></div>
+                    <div class="carrossel-content-navAuto-autoBtn2"></div>
+                    <div class="carrossel-content-navAuto-autoBtn3"></div>
+                    <div class="carrossel-content-navAuto-autoBtn4"></div>
+                </div>
+    
+            </div>   
+            <!--Navegação Manual-->
+            <div class="carrossel-navManual">
+                <label for="radio1" class="carrossel-navManual-btn"></label>
+                <label for="radio2" class="carrossel-navManual-btn"></label>
+                <label for="radio3" class="carrossel-navManual-btn"></label>
+                <label for="radio4" class="carrossel-navManual-btn"></label>
             </div>
         </section>
     </main>

@@ -1,76 +1,100 @@
-section div.carrossel{
+
+
+.carrossel{
     margin: 0 auto;
-    width: 100%;
-    height: auto;
-    padding: 0 !important;
+    width: 800px;
+    height: 400px;
     overflow: hidden;
 }
 
-    section div.carrossel div.carrossel-content{
+    .carrossel-content{
         width: 400%;
-        height: auto;
+        height: 400px;
         display: flex;
     }
 
-    section div.carrossel div.carrossel-content input, 
-    section div.carrossel div.carrossel-box img.mobile{
-        display: none;
-    }
+        .carrossel-content input{
+           display: none;
+        }
 
-    section div.carrossel div.carrossel-content input#radio1:checked ~ section div.carrossel div.nav-auto div.auto-btn1,
-    section div.carrossel div.carrossel-content input#radio2:checked ~ section div.carrossel div.nav-auto div.auto-btn2,
-    section div.carrossel div.carrossel-content input#radio3:checked ~ section div.carrossel div.nav-auto div.auto-btn3,
-    section div.carrossel div.carrossel-content input#radio4:checked ~ section div.carrossel div.nav-auto div.auto-btn4{
-        background-color: #000;
-    }
+        .carrossel-content-box{
+            width: 25%;
+        }
 
-    section div.carrossel div.carrossel-content input#radio1:checked ~ section div.carrossel div.primeiro{
-        margin-left: 0%;
-    }
+            .carrossel-content-box img{
+                width: 800px;
+            }
+        .carrossel-content-navAuto{
+            position: absolute;
+            width: 800px;
+            margin-top: 360px;
+            display: flex;
+            justify-content: center;
+        }
+            .carrossel-content-navAuto div{
+                border: 2px solid #000;
+                padding: 5px;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: 1s;
+            }
+            .carrossel-content-navAuto div:not(:last-child){
+                margin-right: 40px;
+            }
 
-    section div.carrossel div.carrossel-content input#radio2:checked ~ section div.carrossel div.primeiro{
-        margin-left: -25%;
-    }
-
-    section div.carrossel div.carrossel-content input#radio2:checked ~ section div.carrossel div.primeiro{
-        margin-left: -50%;
-    }
-
-    section div.carrossel div.carrossel-content input#radio2:checked ~ section div.carrossel div.primeiro{
-        margin-left: -75%;
-    }
-
-    section div.carrossel div.carrossel-box{
-        width: 25%;
-        height: auto;
-        position: relative;
-        text-align: center;
-        transition: 1s;
-    }
-    section div.carrossel div.carrossel-box img{
-        width: 100%;
-    }
-
-    section div.carrossel div.nav-manual, 
-    section div.carrossel div.nav-auto{
+            #radio1:checked ~ .carrossel-content-navAuto .carrossel-content-navAuto-autoBtn1{
+                background-color: #000;
+            }
+            
+            #radio2:checked ~ .carrossel-content-navAuto .carrossel-content-navAuto-autoBtn2{
+                background-color: #000;
+            }
+            
+            #radio3:checked ~ .carrossel-content-navAuto .carrossel-content-navAuto-autoBtn3{
+                background-color: #000;
+            }
+            
+            #radio4:checked ~ .carrossel-content-navAuto .carrossel-content-navAuto-autoBtn4{
+                background-color: #000;
+            }
+    .carrossel-navManual{
         position: absolute;
-        width: 100%;
-        margin-top: 35%;
+        width: 800px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
     }
+        .carrossel-navManual-btn{
+            border: 2px solid #000;
+            padding: 5px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 1s;
+        }
+        .carrossel-navManual-btn:not(:last-child){
+            margin-right: 40px;
+        }
+        .carrossel-navManual-btn:hover{
+            background-color: #000;
+        }
 
-    section div.carrossel div.nav-manual label.manual-btn,
-    section div.carrossel div.nav-auto div{
-        border: 1px solid #000;
-        padding: 10px;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: 0.2;
-    }
+        #radio1:checked ~ .primeiro{
+            margin-left: 0%;
+            transition: 1s;
+        }
 
-    section div.carrossel div.nav-manual label.manual-btn:not(:last-child){
-        margin-right: 10px;
-    }
+        #radio2:checked ~ .primeiro{
+            margin-left: -25%;
+            transition: 1s;
+        }
 
-    section div.carrossel div.nav-manual label.manual-btn:hover{
-        background-color: #000;
-    }
+        #radio3:checked ~ .primeiro{
+            margin-left: -50%;
+            transition: 1s;
+        }
+
+        #radio4:checked ~ .primeiro{
+            margin-left: -75%;
+            transition: 1s;
+        }
+
